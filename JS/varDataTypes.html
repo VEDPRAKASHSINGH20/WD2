@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Value Types in Js</title>
+</head>
+<body>
+    <script>
+        //Js Data Value Types
+        //Primitive: immutable single value data type in JS
+        // String ,Number,Boolean,Undefined,Null,BigInt and Symbol
+        var name="ved"; //string
+        var mobileNo=98584849493;//number
+        console.log(name+ " mobile number is "+ mobileNo)
+        var isMarried=false;//boolean
+        var myEmail;// undefined
+        var myAddress=null;// null and type is object
+        console.log(typeof(myAddress)); //object
+        var myNum=BigInt(573893543555454446466444464644458583535395);
+        console.log(typeof(myNum));//BigInt
+        var var1="Vikash";
+        var var2="Vikash";
+        console.log(var1==var2); //true
+        var var3=Symbol("Vikash");
+        var var4=Symbol("Vikash");
+        console.log(var3==var4);// false bcoz symbol
+
+
+        //Reference Type(Object)-- mutable in memory and keep the data in key value pair
+
+
+        // object {},function  (),array []
+        // object
+        let myInfo={
+            name:"Vivek",
+            age:23, 
+            isMarried:false,
+            myAddress:"Delhi",
+            Branch:"CSE",
+            Section:23
+
+        };
+        console.log(myInfo);
+        console.log(myInfo.name);
+        // object length
+        var keys=Object.keys(myInfo);
+        console.log(keys.length);
+
+
+        //function -reusable block of code to perform specific task
+        function cal(){
+            var num1=45;
+            var num2=78;
+            var num3=num1+num2;
+            console.log(num3);
+        }
+        cal();
+         
+
+        //array  -collection of elements of any datatype
+        let studentList=["avi","stu","hello",3,false,null];
+        console.log(studentList[1]);
+        console.log(studentList.length);
+        for (let i=0;i<studentList.length;i++){
+            console.log(studentList[i]);
+
+        }
+        for(let i in studentList){
+            console.log(studentList[i]);
+
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
