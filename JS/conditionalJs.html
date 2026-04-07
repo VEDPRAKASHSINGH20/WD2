@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+<body>
+    <script>
+        // conditional statement:In JavaScript, conditional statements control the program flow by executing specific blocks of code based on whether a condition evaluates to true or false. 
+        
+        // if condition...
+
+        //age validation for vote casting!
+
+        let age=19;
+        if(age>=18){
+            console.log(age +" is valid age for vote casting");
+        };
+
+        // if  else ...
+        let myAge=20;
+        if(age<18){
+            console.log("not valid age");
+        }
+        else {
+            console.log("valid age");
+        }
+
+        //switch ...
+        let grade='A';
+        switch (grade){
+            case 'A' :result="First Division";
+            break;
+            case 'B': result="Second Division"; // result is var global scope and can be written without var
+            break;
+            default: result="fail";
+        }
+        console.log(result);
+        // if else if....
+        let marks=65;
+        if(marks>=60){
+            console.log("First grade");
+        } 
+        else if(marks <60 && marks>=50){
+            console.log("Second grade");
+        }
+        else if(marks <50 && marks>=33){
+            console.log("Third grade");
+        }
+        else{
+            console.log("Fail");
+        }
+
+
+    </script>
+</body>
+</html>
